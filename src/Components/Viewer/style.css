@@ -1,0 +1,21 @@
+.buttons {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+.button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.435);
+    color: white;
+    user-select: none;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(61, 61, 61);
+}
