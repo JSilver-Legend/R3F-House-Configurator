@@ -5,7 +5,7 @@ import Roof from '../Roof';
 import './style.css'
 
 const Viewer = () => {
-  const { scene } = useGLTF('assets/main_type.glb');
+  const { scene } = useGLTF('assets/main.glb');
   const [roofType, setRoofType] = useState('');
   var isMoving = false;
 
@@ -17,7 +17,7 @@ const setIsMoving = (isMovingState) => {
     <>
         <Canvas shadows style={{ width: '100%', height: '100vh', position: 'inherit' }}>
             <OrbitControls minDistance={3.5} maxDistance={5.5} minPolarAngle={10 * Math.PI / 30} maxPolarAngle={15 * Math.PI / 30} />
-            <ambientLight intensity={1} />
+            <ambientLight intensity={1} position={[0,1,0]}/>
             <primitive object={scene}>
                 <mesh />
             </primitive>
@@ -33,4 +33,4 @@ const setIsMoving = (isMovingState) => {
 
 export default Viewer;
 
-useGLTF.preload('assets/main_type.glb');
+useGLTF.preload('assets/main.glb');

@@ -52,7 +52,7 @@ useEffect(() => {
 
   return (
     <>
-        <mesh ref={roof_1} receiveShadow geometry={nodes.roof_1.geometry} material={materials.wall} position={[0,1.05,0]} /> 
+        <mesh ref={roof_1} receiveShadow geometry={nodes.roof_1.geometry} material={materials.roof_1} position={[0,1.05,0]} /> 
         <mesh ref={roof_2} receiveShadow geometry={nodes.roof_2.geometry} material={materials.block} position={[0,6,0]} />
     </>
   )
